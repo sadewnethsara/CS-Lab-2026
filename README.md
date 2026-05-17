@@ -5,14 +5,9 @@ This repository contains Computer Science lab exercises and projects for 2026.
 ## Structure
 
 - **Day01/** - HTML exercises and examples
-  - EX01.html - HTML basics and structure
-  - EX02.html - HTML exercise 2
-  - EX03.html - HTML exercise 3
-  - EX04.html - HTML exercise 4
-  - EX05.html - HTML exercise 5
-  - EX06.html - HTML exercise 6
-  - EX07.html - HTML exercise 7
-  - EX08.html - HTML exercise 8
+  - **notebooks/** - Jupyter Notebook containing the lesson (`Day01_Exercises_1-8.ipynb`)
+  - **exercises/** - Exported HTML files (`EX01.html` to `EX08.html`)
+  - **assets/** - Image files used in the exercises
 
 ## Getting Started
 
@@ -20,6 +15,12 @@ Clone this repository:
 ```bash
 git clone https://github.com/sadewnethsara/CS-Lab-2026.git
 ```
+
+### How to Open the Jupyter Notebook
+1. Make sure you have [Python](https://www.python.org/) installed.
+2. Install Jupyter Notebook by running `pip install notebook` in your terminal.
+3. Open a terminal in the root folder of this repository.
+4. Run `jupyter notebook` and navigate to the `Day01/notebooks/` folder to open `Day01_Exercises_1-8.ipynb`. (Alternatively, you can open it directly in VS Code by installing the Jupyter extension).
 
 ## Contents
 
@@ -35,4 +36,4 @@ This is a collection of computer science lab exercises used for learning and pra
 ---
 
 **Author:** Sadew Nethsara
-**Last Updated:** May 14, 2026
+**Last Updated:** May 17, 2026
