@@ -8,7 +8,10 @@ A collection of Computer Science lab exercises and small projects for 2026, focu
   - `assets/` — images and media used by exercises
   - `exercises/` — exported HTML exercise pages (`EX01.html` → `EX08.html`)
 - `Day02/` — additional exercise set and styles
-  - `exercise/` — HTML files and `style.css` for Day 02
+  - `exercise/` — HTML files and `style.css` for Day 02 (`Ex01.html` → `Ex08.html`)
+- `Day05/` — advanced exercises with HTML and JavaScript
+  - `exercises/html/` — HTML exercise pages (``)
+  - `exercises/js/` — JavaScript files (``)
 
 ## Getting started
 
@@ -26,9 +29,10 @@ Tips:
 
 ## What you'll find
 
-- Static HTML exercises for practice (Day 1 and Day 2).
+- Static HTML exercises across multiple days (Day 1, Day 2, and Day 5).
+- JavaScript exercises starting from Day 05 with integrated HTML and JS files.
 - Images and other assets in `Day01/assets/`.
-- A simple stylesheet in `Day02/exercise/style.css`.
+- Stylesheets in `Day02/exercise/style.css`.
 
 ## Contact
 
@@ -36,4 +40,4 @@ Author: Sadew Nethsara.
 
 ---
 
-Last updated: May 19, 2026
+Last updated: June 9, 2026
