@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercise 7 - Block vs Inline Elements</title>
+    <style>
+        /* Outer container box matching the screenshot border */
+        .outer-box {
+            border: 1px solid #000000;
+            padding: 20px;
+            margin: 20px auto;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Headings styling */
+        h1 {
+            font-size: 32px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling to visualize the full-width nature of block elements */
+        .block-example {
+            border: 1px solid #000000;
+            padding: 2px 5px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        /* Descriptive paragraph styling */
+        .description {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 15px;
+            margin-bottom: 40px;
+        }
+
+        /* Adjusting spacing for the inline section description */
+        .inline-description {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="outer-box">
+        
+        <h1>Block elements</h1>
+        
+        <div class="block-example">Hello world</div>
+        <p class="block-example">Hello world</p>
+        
+        <p class="description">
+            The p and div elements are both block elements, and they will always start an new line and always takes up the full width available
+        </p>
+
+        <h1>Inline elements</h1>
+        
+        <p class="inline-description">
+            The <b>bold</b> element is an inline element and does not start on a new line
+        </p>
+
+    </div>
+
 </body>
 </html>

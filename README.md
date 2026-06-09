@@ -1,33 +1,39 @@
 # CS Lab 2026
 
-This repository contains Computer Science lab exercises and projects for 2026.
+A collection of Computer Science lab exercises and small projects for 2026, focused on basic web development and hands-on practice.
 
-## Structure
+## Repository structure
 
-- **Day01/** - HTML exercises and examples
-  - **notebooks/** - Jupyter Notebook containing the lesson (`Day01_Exercises_1-8.ipynb`)
-  - **exercises/** - Exported HTML files (`EX01.html` to `EX08.html`)
-  - **assets/** - Image files used in the exercises
+- `Day01/` — HTML exercises and supporting assets
+  - `assets/` — images and media used by exercises
+  - `exercises/` — exported HTML exercise pages (`EX01.html` → `EX08.html`)
+- `Day02/` — additional exercise set and styles
+  - `exercise/` — HTML files and `style.css` for Day 02
 
-## Getting Started
+## Getting started
 
-Clone this repository:
+1. Clone the repo:
+
 ```bash
 git clone https://github.com/sadewnethsara/CS-Lab-2026.git
+cd CS-Lab-2026
 ```
 
-## Contents
+2. Open any exercise HTML file in a browser (double-click or use a local server).
 
-This repository includes:
-- HTML exercises and examples
-- Web development practice files
-- Resource images and assets
+Tips:
+- Use Live Server (VS Code) or `python -m http.server` to serve files when testing dynamic assets.
 
-## About
+## What you'll find
 
-This is a collection of computer science lab exercises used for learning and practice in 2026.
+- Static HTML exercises for practice (Day 1 and Day 2).
+- Images and other assets in `Day01/assets/`.
+- A simple stylesheet in `Day02/exercise/style.css`.
+
+## Contact
+
+Author: Sadew Nethsara.
 
 ---
 
-**Author:** Sadew Nethsara
-**Last Updated:** May 17, 2026
+Last updated: May 19, 2026

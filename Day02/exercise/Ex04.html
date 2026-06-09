@@ -3,55 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Form</title>
-	<style>
-		body {
-			background-color: rgb(127,191,255);
-			padding: 20px;
-		}
-	</style>
+    <title>Registration Form</title>
+    <style>
+        /* Basic reset and font styling to match the standard look */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+            color: #000;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* Form Layout styling using Flexbox for clean alignment */
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 18px;
+            width: 120px; /* Aligns all inputs neatly */
+            margin-right: 10px;
+        }
+
+        /* Styling for text, password, date inputs, and dropdowns */
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            font-family: inherit;
+            font-size: 16px;
+            padding: 3px 5px;
+            border: 1px solid #767676;
+            border-radius: 2px;
+            width: 250px;
+            box-sizing: border-box;
+        }
+
+        /* Custom width override for inline elements like radio/checkbox groups */
+        .inline-group {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .inline-group label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            width: auto;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* Submit Button Styling */
+        input[type="submit"] {
+            font-family: inherit;
+            font-size: 16px;
+            padding: 4px 12px;
+            background-color: #f0f0f0;
+            border: 1px solid #767676;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e5e5e5;
+        }
+
+        /* Footer Link */
+        .contact-link {
+            display: block;
+            font-size: 18px;
+            color: #0000ee;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+
     <h2>Registration form</h2>
-	
-	<form>
-		<label for="fname">First Name : </label>
-		<input type="text" id="fname" name="fname"><br>
-		
-		<label for="lname">Last Name : </label>
-		<input type="text" id="lname" name="lname"><br>
-		
-		<label for="password">Password : </label>
-		<input type="password" id="password" name="password"><br>
-		
-		<label>Gender : </label>
-		<input type="radio" id="male" name="gender" value="male">
-		<label for="male">Male</label>
-		<input type="radio" id="female" name="gender" value="female">
-		<label for="female">Female</label><br>
-		
-		<label for="country">Country : </label>
-		<select id="country" name="country">
-			<option value="">---Select a Country---</option>
-			<option value="Sri Lanka">Sri Lanka</option>
-			<option value="India">India</option>
-			<option value="USA">USA</option>
-		</select><br>
-		
-		<label for="dob">Date Of Birth : </label>
-		<input type="date" id="dob" name="dob"><br>
-		
-		<label>Interests : </label>
-		<input type="checkbox" id="tv" name="interests" value="watchingtv">
-		<label for="tv">Watching TV</label>
-		
-		<input type="checkbox" id="cricket" name="interests" value="cricket">
-		<label for="cricket">Cricket</label>
-		
-		<input type="checkbox" id="cooking" name="interests" value="cooking">
-		<label for="cooking">Cooking</label><br>
-		
-		<button type="submit">Submit</button>
-	</form>
+
+    <form action="#" method="POST">
+        
+        <div class="form-group">
+            <label for="first-name">First name:</label>
+            <input type="text" id="first-name" name="first_name">
+        </div>
+
+        <div class="form-group">
+            <label for="last-name">Last name:</label>
+            <input type="text" id="last-name" name="last_name">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div class="form-group">
+            <span style="width: 120px; font-size: 18px; margin-right: 10px;">Gender:</span>
+            <div class="inline-group">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">--Select a country--</option>
+                <option value="usa">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="india">India</option>
+                <option value="australia">Australia</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <div class="form-group">
+            <span style="width: 120px; font-size: 18px; margin-right: 10px;">Interests:</span>
+            <div class="inline-group">
+                <label><input type="checkbox" name="interests" value="tv"> Watching TV</label>
+                <label><input type="checkbox" name="interests" value="cricket"> Cricket</label>
+                <label><input type="checkbox" name="interests" value="cooking"> Cooking Foods</label>
+            </div>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+
+    <a href="#" class="contact-link">Contact Us</a>
+
 </body>
 </html>
