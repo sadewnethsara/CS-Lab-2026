@@ -2,12 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temperature Converter</title>
+    <style>
+        .converter-container {
+            border: 2px solid green;
+            padding: 30px;
+            width: 500px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        .section-title {
+            font-size: 1.2rem;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            width: 180px;
+            padding: 4px;
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+        button {
+            display: block;
+            margin-top: 8px;
+            padding: 3px 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>JavaScript Events</h1>
-	<input type="button" onclick="clickevent()" value="Show Massage"> </button>
-	<script src="../js/Ex09.js"></script>
+
+<div class="converter-container">
+    <h1>Temperature Converter</h1>
+
+    <div class="section-title">Celsius to Fahrenheit</div>
+    <input type="text" id="celsiusInput" value="52">
+    <input type="text" id="fahrenheitResult" readonly>
+    <button onclick="convertCtoF()">Convert</button>
+
+    <div class="section-title">Fahrenheit to Celsius</div>
+    <input type="text" id="fahrenheitInput" value="125.60">
+    <input type="text" id="celsiusResult" readonly>
+    <button onclick="convertFtoC()">Convert</button>
+</div>
+
+<script>
+    function convertCtoF() {
+        let celsius = parseFloat(document.getElementById("celsiusInput").value);
+        if (!isNaN(celsius)) {
+            let fahrenheit = (celsius * 9/5) + 32;
+            document.getElementById("fahrenheitResult").value = fahrenheit.toFixed(2); 
+        }
+    }
+
+    function convertFtoC() {
+        let fahrenheit = parseFloat(document.getElementById("fahrenheitInput").value);
+        if (!isNaN(fahrenheit)) {
+            let celsius = (fahrenheit - 32) * 5/9;
+            document.getElementById("celsiusResult").value = celsius.toFixed(2); 
+        }
+    }
+</script>
+
 </body>
 </html>

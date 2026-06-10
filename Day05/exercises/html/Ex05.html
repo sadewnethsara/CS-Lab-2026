@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 5 - If Else Condition</title>
+</head>
+<body>
+
+    <h2>Number Comparison</h2>
+    <p id="result"></p>
+
+    <script>
+        let number = 25; 
+        let resultText = "";
+
+        if (number < 30) {
+            resultText = number + " is less than 30.";
+        } else if (number === 30) {
+            resultText = number + " is equal to 30.";
+        } else {
+            resultText = number + " is greater than 30.";
+        }
+        document.getElementById("result").textContent = resultText;
+    </script>
+
+</body>
+</html>

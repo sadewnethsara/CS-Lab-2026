@@ -2,16 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercise 6 - Car List Loop</title>
 </head>
 <body>
-    <h1>My first JavaScript</h1>
-	<p id="demo1"></p>
-	<p id="demo2"></p>
-	<p id="demo3"></p>
-	<p id="demo4"></p>
-	
-	<script src="../js/Ex06.js"></script>
+
+    <h2>Available Car Names</h2>
+    <ul id="car-list"></ul>
+
+    <script>
+        const cars = ["Toyota", "BMW", "MAZDA", "VOLVO"];
+        let listHTML = "";
+
+        for (let i = 0; i < cars.length; i++) {
+            listHTML += "<li>" + cars[i] + "</li>";
+        }
+
+        document.getElementById("car-list").innerHTML = listHTML;
+    </script>
+
 </body>
 </html>
