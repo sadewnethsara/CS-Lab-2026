@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 7 - JS Events</title>
+</head>
+<body>
+
+    <h2>JavaScript Event Demonstration</h2>
+    
+    <button onclick="showMessage()" onmouseover="showMessage()">Interact with Me</button>
+    
+    <p id="message"></p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent = "Hello All, This is your first JavaScript Event";
+        }
+    </script>
+
+</body>
+</html>

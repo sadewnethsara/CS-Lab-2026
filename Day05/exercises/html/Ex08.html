@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 8 - Prompt & Alert</title>
+</head>
+<body>
+
+    <h2>Sum Calculator Box</h2>
+    <button onclick="calculateSum()">Click to Enter Numbers</button>
+
+    <script>
+        function calculateSum() {
+            let firstInput = prompt("Enter the first number:");
+            let secondInput = prompt("Enter the second number:");
+
+            let num1 = parseFloat(firstInput);
+            let num2 = parseFloat(secondInput);
+
+            if (!isNaN(num1) && !isNaN(num2)) {
+                let sum = num1 + num2;
+                alert("The sum of those numbers is: " + sum);
+            } else {
+                alert("Please enter valid numbers!");
+            }
+        }
+    </script>
+
+</body>
+</html>
