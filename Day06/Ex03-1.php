@@ -3,7 +3,9 @@
 </head>
 <body>
     <?php
-    echo "My first php script";
-    ?>
+		$x=5;
+		$y=10;
+		echo $x+$y;
+	?>
 </body>
 </html>
